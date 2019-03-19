@@ -65,7 +65,7 @@ html {
   }
 }
 
-/* DEMO-SPECIFIC STYLES */
+/* typewriterwriter */
 
 .typewriter h1 {
   color: #323b3c;
@@ -77,7 +77,7 @@ html {
   letter-spacing: 0.15em; /* Adjust as needed */
   animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
-
+/* /type */
 /* typing effect */
 @keyframes typing {
   from {
