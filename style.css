@@ -32,6 +32,14 @@ html {
   font-size: 1rem;
 }
 
+.carousel {
+  padding: 25px;
+  margin: 25px;
+}
+.display-4 {
+  font-family: "Martel";
+}
+
 @include media-breakpoint-up(sm) {
   html {
     font-size: 1.2rem;
@@ -50,14 +58,14 @@ html {
   }
 }
 
+.card:hover .img-fluid {
+  opacity: 0.8;
+}
+
 .img-amber {
   width: 150px;
   text-align: center;
-
-  .carousel {
-    width: 640px;
-    height: 360px;
-  }
+  padding:25px;
 
   img:hover {
     -webkit-transform: scaleX(-1);
@@ -67,13 +75,14 @@ html {
 
 /* typewriterwriter */
 
-.typewriter h1 {
+.typewriter h3 {
   color: #323b3c;
   font-family: Martel;
   overflow: scroll; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid black; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  padding: 10px
   letter-spacing: 0.15em; /* Adjust as needed */
   animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
