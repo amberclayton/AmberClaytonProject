@@ -1,123 +1,139 @@
+
+
+
+/* logo photo */
 .img-amber {
   width: 500px;
   text-align: center;
   padding: 50px;
+  opacity:0;
 
-  h3 {
-    color: #272623;
-    font-family: "Martel";
-    font-size: 32px;
-    font-weight: 300;
-    line-height: 52px;
-    margin-bottom: 48px;
-    text-align: center;
+  #img-amber {
+    width: 500px;
+    text-align:center;
+    padding:50px
+    opacity:0;
   }
+ 
 
-  h5 {
-    color: #272623;
-    font-family: "Roboto Condensed";
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 3px;
-    margin-bottom: 48px;
-    text-align: center;
-    text-transform: uppercase;
+  
+    h3 {
+      color: #272623;
+      font-family: "Martel";
+      font-size: 32px;
+      font-weight: 300;
+      line-height: 52px;
+      margin-bottom: 48px;
+      text-align: center;
+    }
+  
+    h5 {
+      color: #272623;
+      font-family: "Roboto Condensed";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 3px;
+      margin-bottom: 48px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  
+    a {
+      color: #63b2bb;
+    }
+  
+    a:hover {
+      color: #323b3c;
+    }
+  
+    html {
+      font-size: 1rem;
+    }
+  
+    .carousel {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      margin: 25px;
+    }
+    .display-4 {
+      font-family: "Martel";
+    }
+  
+    @include media-breakpoint-up(sm) {
+      html {
+        font-size: 1.2rem;
+      }
+    }
+  
+    @include media-breakpoint-up(md) {
+      html {
+        font-size: 1.4rem;
+      }
+    }
+  
+    @include media-breakpoint-up(lg) {
+      html {
+        font-size: 1.6rem;
+      }
+    }
+  
+    .card:hover .img-fluid {
+      opacity: 0.8;
+    }
+  
+    img:hover {
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+    }
   }
-
-  a {
-    color: #63b2bb;
-  }
-
-  a:hover {
+  
+  /* typewriter */
+  
+  .typewriter h3 {
     color: #323b3c;
+    font-family: Martel;
+    overflow: scroll; /* Ensures the content is not revealed until the animation */
+    border-right: 0.15em solid black;
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto;
+    padding-bottom: 5px;
+    letter-spacing: 0.15em;
+    animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
   }
-
-  html {
-    font-size: 1rem;
-  }
-
-  .carousel {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin: 25px;
-  }
-  .display-4 {
-    font-family: "Martel";
-  }
-
-  @include media-breakpoint-up(sm) {
-    html {
-      font-size: 1.2rem;
+  /* /typewriter*/
+  /* typing effect */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
     }
   }
-
-  @include media-breakpoint-up(md) {
-    html {
-      font-size: 1.4rem;
+  
+  /* cursor effect */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: black;
     }
   }
-
-  @include media-breakpoint-up(lg) {
-    html {
-      font-size: 1.6rem;
-    }
+  .carousel-inner > .item {
+    height: 400px;
   }
-
-  .card:hover .img-fluid {
-    opacity: 0.8;
-  }
-
-  img:hover {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-  }
-}
-
-/* typewriter */
-
-.typewriter h3 {
-  color: #323b3c;
-  font-family: Martel;
-  overflow: scroll; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid black;
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto;
-  padding-bottom: 5px;
-  letter-spacing: 0.15em;
-  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
-}
-/* /typewriter*/
-/* typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: black;
-  }
-}
-.carousel-inner > .item {
-  height: 400px;
-}
-
-h1 {
-  font-size: calc(1.2em + 3vw);
-}
-
-@media (min-width: 50em) {
+  
   h1 {
-    font-size: 50px;
+    font-size: calc(1.2em + 3vw);
   }
-}
+  
+  @media (min-width: 50em) {
+    h1 {
+      font-size: 50px;
+    }
+  }
+
+  
