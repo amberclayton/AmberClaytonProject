@@ -1,62 +1,71 @@
-h3 {
-  color: #272623;
-  font-family: "Martel";
-  font-size: 32px;
-  font-weight: 300;
-  line-height: 52px;
-  margin-bottom: 48px;
-  text-align: center;
-}
-
-h5 {
-  color: #272623;
-  font-family: "Roboto Condensed";
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 3px;
-  margin-bottom: 48px;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-a {
-  color: #63b2bb;
-}
-
-a:hover {
-  color: #323b3c;
-}
-
-html {
-  font-size: 1rem;
-}
-
-@include media-breakpoint-up(sm) {
-  html {
-    font-size: 1.2rem;
-  }
-}
-
-@include media-breakpoint-up(md) {
-  html {
-    font-size: 1.4rem;
-  }
-}
-
-@include media-breakpoint-up(lg) {
-  html {
-    font-size: 1.6rem;
-  }
-}
-
 .img-amber {
-  width: 150px;
+  width: 500px;
   text-align: center;
+  padding: 50px;
+
+  h3 {
+    color: #272623;
+    font-family: "Martel";
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 52px;
+    margin-bottom: 48px;
+    text-align: center;
+  }
+
+  h5 {
+    color: #272623;
+    font-family: "Roboto Condensed";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 3px;
+    margin-bottom: 48px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  a {
+    color: #63b2bb;
+  }
+
+  a:hover {
+    color: #323b3c;
+  }
+
+  html {
+    font-size: 1rem;
+  }
 
   .carousel {
-    width: 640px;
-    height: 360px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin: 25px;
+  }
+  .display-4 {
+    font-family: "Martel";
+  }
+
+  @include media-breakpoint-up(sm) {
+    html {
+      font-size: 1.2rem;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 1.4rem;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 1.6rem;
+    }
+  }
+
+  .card:hover .img-fluid {
+    opacity: 0.8;
   }
 
   img:hover {
@@ -65,19 +74,20 @@ html {
   }
 }
 
-/* typewriterwriter */
+/* typewriter */
 
-.typewriter h1 {
+.typewriter h3 {
   color: #323b3c;
   font-family: Martel;
   overflow: scroll; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid black; /* The typwriter cursor */
+  border-right: 0.15em solid black;
   white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
+  margin: 0 auto;
+  padding-bottom: 5px;
+  letter-spacing: 0.15em;
   animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
 }
-/* /type */
+/* /typewriter*/
 /* typing effect */
 @keyframes typing {
   from {
