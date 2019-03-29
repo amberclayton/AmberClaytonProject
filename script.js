@@ -1,11 +1,18 @@
-$(document).ready(function() {
-  console.log("hi");
+$(document).ready(
+  (function() {
+    console.log("hi");
 
-  $("#img-amber").animate({ opacity: 1 }, 1500);
+    $("#img-amber").animate({ opacity: 1 }, 1500);
 
-
-  $("button").click(function(){
-    $("btn btn-primary").animate({
-      height: 'toggle'
+    $("toggle").click(function() {
+      $("btn btn-primary").animate({
+        height: "toggle"
+      });
     });
-  }); 
+
+   
+
+   
+
+
+

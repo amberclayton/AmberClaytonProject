@@ -122,7 +122,7 @@
       border-color: black;
     }
   }
-  .carousel-inner > .item {
+  #carousel-inner > .item {
     height: 400px;
   }
   
@@ -135,5 +135,26 @@
       font-size: 50px;
     }
   }
+  .img-fluid:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);}
 
-  
+    .ripple
+	overflow: hidden
+	position: relative
+	z-index: 1
+	span
+		animation: ink 1.6s
+		border-radius: 100%
+		background: #FFFFFF
+		height: 12px
+		position: absolute
+		width: 12px
+
+@keyframes ink
+	0%
+		opacity: 0.2
+		transform: scale(1)
+	100%
+		opacity: 0
+		transform: scale(40)
